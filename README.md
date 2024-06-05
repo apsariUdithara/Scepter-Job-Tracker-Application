@@ -32,7 +32,7 @@ npm run dev
 
 ```jsx
 const App = () => {
-  return <h1>Jobify App</h1>;
+  return <h1>Scepter Job Tracker App</h1> App</h1>;
 };
 export default App;
 ```
@@ -65,7 +65,7 @@ export default App;
 ```html
 <head>
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-  <title>Jobify</title>
+  <title>Scepter</title>
 </head>
 ```
 
@@ -447,7 +447,7 @@ const Landing = () => {
   return (
     <StyledWrapper>
       <nav>
-        <img src={logo} alt='jobify' className='logo' />
+        <img src={logo} alt='scepter' className='logo' />
       </nav>
       <div className='container page'>
         {/* info */}
@@ -548,7 +548,7 @@ import Wrapper from '../assets/wrappers/LandingPage';
 import logo from '../assets/images/logo.svg';
 
 const Logo = () => {
-  return <img src={logo} alt='jobify' className='logo' />;
+  return <img src={logo} alt='scepter' className='logo' />;
 };
 
 export default Logo;
@@ -1687,7 +1687,7 @@ rd /s /q .git
 - Windows commands were shared by students and I have not personally tested them.
 - git status should return :
   "fatal: Not a git repository (or any of the parent directories): .git"
-- create jobify directory
+- create scepter directory
 - copy/paste client
 - move README to root
 
