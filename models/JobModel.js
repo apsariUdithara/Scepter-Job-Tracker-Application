@@ -11,7 +11,7 @@ const JobSchema = new mongoose.Schema(
     },
 
     jobType: {
-      tupe: String,
+      type: String,
       enum: ["full-time", "part-time", "internship"],
       default: "full-time",
     },
