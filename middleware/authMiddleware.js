@@ -1,5 +1,7 @@
-export const authenticateUser = async (req, res, next) => {
-  console.log('auth middleware');
-    next();
+import { UnauthenticatedError } from "../errors/customError.js";
 
+export const authenticateUser = async (req, res, next) => {
+  const { token } = req.cookies;
+  if (!token) throw new UnauthenticatedError("authentication invalid");
+  next();
 };
