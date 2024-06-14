@@ -9,7 +9,9 @@ export const getCurrentUser = async (req, res) => {
 };
 
 export const getapplicationStats = async (req, res) => {
-  res.status(StatusCodes.OK).json({ msg: "application stats" });
+  const users = await User.countDocuments();
+  const jobs = await Job.countDocuments();
+  res.status(StatusCodes.OK).json({ users, jobs });
 };
 
 export const updateUser = async (req, res) => {
