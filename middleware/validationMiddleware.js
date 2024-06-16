@@ -13,6 +13,7 @@ const withValidationErrors = (validateValues) => {
   return [
     validateValues,
     (req, res, next) => {
+      // console.log(req.body, "from validations");
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
         const errorMessages = errors.array().map((error) => error.msg);
@@ -58,7 +59,7 @@ export const validateIdParam = withValidationErrors([
 ]);
 
 export const validateRegisterInput = withValidationErrors([
-  body("name").notEmpty().withMessage("name is required"),
+  body("firstName").notEmpty().withMessage("firstName is required"),
   body("email")
     .notEmpty()
     .withMessage("email is required")
