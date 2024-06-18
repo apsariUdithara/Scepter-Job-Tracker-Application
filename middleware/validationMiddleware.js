@@ -59,7 +59,7 @@ export const validateIdParam = withValidationErrors([
 ]);
 
 export const validateRegisterInput = withValidationErrors([
-  body("firstName").notEmpty().withMessage("firstName is required"),
+  body("name").notEmpty().withMessage("first name is required"),
   body("email")
     .notEmpty()
     .withMessage("email is required")

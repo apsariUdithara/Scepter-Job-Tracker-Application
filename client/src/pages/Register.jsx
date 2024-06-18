@@ -27,7 +27,7 @@ const Register = () => {
         <h4>Register</h4>
         <FormRow
           type="text"
-          name="firstName"
+          name="name"
           labelText="First Name"
           defaultValue="John"
         />

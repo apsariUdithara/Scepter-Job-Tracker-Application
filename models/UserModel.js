@@ -3,9 +3,9 @@ const UserSchema = new mongoose.Schema({
   // name: String,
   email: String,
   password: String,
-  firstName: {
+  name: {
     type: String,
-    default: "firstName",
+    default: "name",
   },
   lastName: {
     type: String,
