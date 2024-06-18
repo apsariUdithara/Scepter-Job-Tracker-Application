@@ -14,7 +14,7 @@ html {
 
 :root {
   /* colors */
- 
+
   --soapgreen-50: #e0fcff;
   --soapgreen-100: #bef8fd;
   --soapgreen-200: #87eaf2;
@@ -25,7 +25,6 @@ html {
   --soapgreen-700: #0e7c86;
   --soapgreen-800: #0a6c74;
   --soapgreen-900: #044e54;
-  
 
   --primary-1: #264653;
 
@@ -96,40 +95,36 @@ html {
   --dark-mode-text-color: #747a7d;
   --dark-mode-bg-secondary-color: #131820;
   --dark-mode-text-secondary-color: var(--white);
-  
 
-  --text-color: var(--grey-800); 
+  --text-color: var(--grey-800);
   --text-secondary-color: var(--grey-900);
-  --text-heading-color:var(--black);
+  --text-heading-color: var(--black);
   --background-color: var(--grey-50);
   --background-secondary-color: var(--white);
-  --BigSidebarbg-color:var(--primary-1);
-  --bignavlinktext-color:var(--white);
-  --smallnavlinktext-color:var(--grey-700);
-  --togglebutton-color:var(--green-500);
+  --BigSidebarbg-color: var(--primary-1);
+  --bignavlinktext-color: var(--white);
+  --smallnavlinktext-color: var(--grey-700);
+  --togglebutton-color: var(--green-500);
   /*btn*/
-  --btn2text-color:var(--orange-400);
-  --btn2bg-color:var(--white);
-  --btn2hoverbg-color:var(--white);
+  --btn2text-color: var(--orange-400);
+  --btn2bg-color: var(--white);
+  --btn2hoverbg-color: var(--white);
 }
-
 
 .dark-theme {
   --text-color: var(--dark-mode-text-color);
-  --text-heading-color:var(--white);
+  --text-heading-color: var(--white);
   --background-color: var(--dark-mode-bg-color);
   --text-secondary-color: var(--dark-mode-text-secondary-color);
   --background-secondary-color: var(--dark-mode-bg-secondary-color);
-  --BigSidebarbg-color:var(--dark-mode-bg-secondary-color);
-  --bignavlinktext-color:var(--dark-mode-text-color);
-  --smallnavlinktext-color:var(--dark-mode-text-color);
-  --togglebutton-color:var(--soapgreen-500);
+  --BigSidebarbg-color: var(--dark-mode-bg-secondary-color);
+  --bignavlinktext-color: var(--dark-mode-text-color);
+  --smallnavlinktext-color: var(--dark-mode-text-color);
+  --togglebutton-color: var(--soapgreen-500);
   /*btn2*/
-  --btn2text-color:var(--grey-900);
-  --btn2bg-color:var(--orange-400);
-  --btn2hoverbg-color:var(--orange-500);
-  
-
+  --btn2text-color: var(--grey-900);
+  --btn2bg-color: var(--orange-400);
+  --btn2hoverbg-color: var(--orange-500);
 }
 
 body {
@@ -150,7 +145,7 @@ h4,
 h5 {
   margin: 0;
   font-weight: 400;
-  color:var(--text-heading-color);
+  color: var(--text-heading-color);
   line-height: 1;
   text-transform: capitalize;
   letter-spacing: var(--letter-spacing);
@@ -230,7 +225,7 @@ ul {
   border: transparent;
   border-radius: var(--border-radius);
   letter-spacing: var(--letter-spacing);
-  font-weight:600;
+  font-weight: 600;
   padding: 0.375rem 0.75rem;
   box-shadow: var(--shadow-1);
   transition: var(--transition);
@@ -258,7 +253,7 @@ ul {
   color: var(--btn2text-color);
   background: var(--btn2bg-color);
   border: solid;
-  font-weight:bold;
+  font-weight: bold;
   border-radius: var(--border-radius);
   letter-spacing: var(--letter-spacing);
   padding: 0.375rem 0.75rem;
@@ -271,7 +266,7 @@ ul {
 
 .btn2:hover {
   background: var(--btn2hoverbg-color);
-  
+
   box-shadow: var(--shadow-4);
 }
 .btn2-hipster {
@@ -337,10 +332,20 @@ button:disabled {
   width: 100%;
   padding: 0.375rem 0.75rem;
   border-radius: var(--border-radius);
-  background: var(--background-color);
-  border: 1px solid var(--grey-300);
+  background: var(--grey-100);
+  border: 1px solid var(--primary-3);
   color: var(--text-color);
 }
+
+/*i changed*/
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: var(--primary-3); 
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(233, 196, 106, 0.5);
+}
+
 .form-input,
 .form-select,
 .form-btn {
