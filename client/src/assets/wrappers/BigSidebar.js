@@ -58,7 +58,8 @@ const Wrapper = styled.aside`
       color: var(--soapgreen-500);
     }
     .pending {
-      background: var(--background-color);
+      background: var(--primary-1-600);
+      // color: var(--grey-300);
     }
   }
 `;

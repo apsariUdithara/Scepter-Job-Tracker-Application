@@ -26,7 +26,15 @@ html {
   --soapgreen-800: #0a6c74;
   --soapgreen-900: #044e54;
 
+  --primary-1-100: #d4dadd;
+  --primary-1-200: #a8b5ba;
+  --primary-1-300: #7d9098;
+  --primary-1-400: #516b75;
   --primary-1: #264653;
+  --primary-1-600: #1e3842;
+  --primary-1-700: #172a32;
+  --primary-1-800: #0f1c21;
+  --primary-1-900: #080e11;
 
   --green-100: #d4ebe9;
   --green-200: #aad8d2;
@@ -337,12 +345,18 @@ button:disabled {
   color: var(--text-color);
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--grey-100) inset;
+}
+
 /*i changed*/
 .form-input:focus,
 .form-textarea:focus,
 .form-select:focus {
-  border-color: var(--primary-3); 
-  outline: none; 
+  border-color: var(--primary-3);
+  outline: none;
   box-shadow: 0 0 0 3px rgba(233, 196, 106, 0.5);
 }
 

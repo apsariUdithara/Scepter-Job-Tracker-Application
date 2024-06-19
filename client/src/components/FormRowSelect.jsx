@@ -1,8 +1,8 @@
-const FormRowSelect = ({name,labelText,list,defaultValue=''}) => {
+const FormRowSelect = ({ name, labelText, list, defaultValue = "" }) => {
   return (
-    <div className="='form-row">
+    <div className="form-row">
       <label htmlFor={name} className="form-label">
-        {labelText||name}
+        {labelText || name}
       </label>
       <select
         name={name}
@@ -20,5 +20,5 @@ const FormRowSelect = ({name,labelText,list,defaultValue=''}) => {
       </select>
     </div>
   );
-}
-export default FormRowSelect
+};
+export default FormRowSelect;
