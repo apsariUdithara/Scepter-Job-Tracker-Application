@@ -357,7 +357,7 @@ select:-webkit-autofill {
 .form-select:focus {
   border-color: var(--primary-3);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(233, 196, 106, 0.5);
+  box-shadow: 0 0 0 1px var(--primary-3);
 }
 
 .form-input,
