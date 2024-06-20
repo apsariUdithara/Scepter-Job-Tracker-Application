@@ -7,20 +7,26 @@ import { useContext, createContext } from "react";
 export const loader = async () => {
   try {
     const { data } = await customFetch.get("/jobs");
-    console.log(data);
     return { data };
   } catch (error) {
     toast.error(error?.response?.data?.msg);
     return error;
   }
 };
+
+const AllJobsContext = createContext();
 const AllJobs = () => {
   const { data } = useLoaderData();
+  console.log(data);
   return (
     <>
-      <SearchContainer />
-      <JobsContainer />
+      <AllJobsContext.Provider value={{ data }}>
+        <SearchContainer />
+        <JobsContainer />
+      </AllJobsContext.Provider>
     </>
   );
 };
+
+export const useAllJobsContext = () => useContext(AllJobsContext);
 export default AllJobs;
