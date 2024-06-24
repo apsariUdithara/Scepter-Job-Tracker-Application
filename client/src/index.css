@@ -117,6 +117,9 @@ html {
   --btn2text-color: var(--orange-400);
   --btn2bg-color: var(--white);
   --btn2hoverbg-color: var(--white);
+  /*alljobs main-icon*/
+  --mainicon-bgcolor:var(--grey-200);
+  --mainicon-textcolor:var(--orange-500);
 }
 
 .dark-theme {

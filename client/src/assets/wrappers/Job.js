@@ -18,12 +18,12 @@ const Wrapper = styled.article`
     height: 60px;
     display: grid;
     place-items: center;
-    background: var(--primary-500);
+    background: var(--mainicon-bgcolor);
     border-radius: var(--border-radius);
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--mainicon-textcolor);
     margin-right: 2rem;
   }
   .info {
