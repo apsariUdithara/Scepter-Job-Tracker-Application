@@ -106,7 +106,7 @@ html {
 
   --text-color: var(--grey-800);
   --text-secondary-color: var(--grey-900);
-  --text-heading-color: var(--black);
+  --text-heading-color: var(--primary-1);
   --background-color: var(--grey-50);
   --background-secondary-color: var(--white);
   --BigSidebarbg-color: var(--primary-1);
@@ -118,8 +118,8 @@ html {
   --btn2bg-color: var(--white);
   --btn2hoverbg-color: var(--white);
   /*alljobs main-icon*/
-  --mainicon-bgcolor:var(--grey-200);
-  --mainicon-textcolor:var(--orange-500);
+  --mainicon-bgcolor: var(--primary-1);
+  --mainicon-textcolor: var(--white);
 }
 
 .dark-theme {
@@ -231,12 +231,12 @@ ul {
 
 .btn1 {
   cursor: pointer;
-  color: var(--black);
+  color: var(--white);
   background: var(--green-500);
   border: transparent;
   border-radius: var(--border-radius);
   letter-spacing: var(--letter-spacing);
-  font-weight: 600;
+  /* font-weight: 500; */
   padding: 0.375rem 0.75rem;
   box-shadow: var(--shadow-1);
   transition: var(--transition);
