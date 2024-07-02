@@ -15,9 +15,23 @@ export const loader = async ({ params }) => {
     return redirect("/dashboard/all-jobs");
   }
 };
-export const action = async () => {
-  return null;
+
+export const action = async ({ request, params }) => {
+  console.log("im here");
+  console.log(request.formData);
+  const formData = await request.formData();
+  const data = Object.fromEntries(formData);
+
+  try {
+    await customFetch.patch(`/jobs/${params.id}`, data);
+    toast.success("Job edited successfully");
+    return redirect("/dashboard/all-jobs");
+  } catch (error) {
+    toast.error(error.response.data.msg);
+    return error;
+  }
 };
+
 const EditJob = () => {
   const { job } = useLoaderData();
   const navigation = useNavigation();
@@ -31,8 +45,8 @@ const EditJob = () => {
           <FormRow type="text" name="company" defaultValue={job.company} />
           <FormRow
             type="text"
-            name="jobLocation"
             labelText="job location"
+            name="jobLocation"
             defaultValue={job.jobLocation}
           />
           <FormRowSelect
