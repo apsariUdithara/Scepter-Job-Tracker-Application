@@ -4,6 +4,7 @@ import customFetch from "../../../utils/customFetch";
 import Wrapper from "../assets/wrappers/StatsContainer";
 import { toast } from "react-toastify";
 import { StatItem } from "../components";
+import { UserDetailsTb } from "../components";
 
 export const loader = async () => {
   try {
@@ -15,8 +16,9 @@ export const loader = async () => {
   }
 };
 const Admin = () => {
-  const { users, jobs } = useLoaderData();
+  const { users, jobs,userList } = useLoaderData();
   return (
+    <>
     <Wrapper>
       <StatItem
         title="current users"
@@ -32,7 +34,16 @@ const Admin = () => {
         bcg="#e0e8f9"
         icon={<FaCalendarCheck />}
       />
+
+      
+
     </Wrapper>
+    <UserDetailsTb userList={userList} />
+</>
+
+  
   );
 };
+
+
 export default Admin;
