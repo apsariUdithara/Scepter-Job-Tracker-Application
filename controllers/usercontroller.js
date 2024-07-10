@@ -12,10 +12,11 @@ export const getapplicationStats = async (req, res) => {
   const users = await User.countDocuments();
   const jobs = await Job.countDocuments();
   const userList = await User.find({}, "_id name lastName location email");
-  res.status(StatusCodes.OK).json({ users, jobs,userList });
+  res.status(StatusCodes.OK).json({ users, jobs, userList });
 };
 
 export const updateUser = async (req, res) => {
+  console.log(req.file);
   const obj = { ...req.body };
   delete obj.password;
   console.log(obj);
