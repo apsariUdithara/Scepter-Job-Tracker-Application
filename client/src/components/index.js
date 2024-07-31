@@ -10,3 +10,5 @@ export { default as StatItem } from "./StatItem";
 // ... other exports
 export { default as UserDetailsTb } from "./UserDetailsTb";
 export { default as SubmitBtn } from "./SubmitBtn";
+export { default as ChartsContainer } from "./ChartsContainer";
+export { default as StatsContainer } from "./StatsContainer";
