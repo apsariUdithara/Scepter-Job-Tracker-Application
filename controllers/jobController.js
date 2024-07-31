@@ -47,10 +47,16 @@ export const showStats = async (req, res) => {
   }, {});
   console.log(stats);
 
+  // Total applied jobs
+  const appliedJobsCount = await Job.countDocuments({
+    createdBy: req.user.userId,
+  });
+
   const defaultStats = {
     pending: stats.pending || 0,
     interview: stats.interview || 0,
     declined: stats.declined || 0,
+    appliedJobs: appliedJobsCount || 0, // Add the applied jobs count here
   };
 
   let monthlyApplications = await Job.aggregate([

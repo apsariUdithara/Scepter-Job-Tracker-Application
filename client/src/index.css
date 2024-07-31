@@ -47,16 +47,18 @@ html {
   --green-900: #081f1d;
 
   --primary-3: #e9c46a;
+  --primary-3-2:#f4e2b5;
   --primary-4: #f4a261;
+  --primary-4-2:#fad1b0;
 
-  --orange-100: #fae2dc;
-  --orange-200: #f1a997;
-  --orange-300: #ec8c74;
-  --orange-400: #e76f51;
-  --orange-500: #b95941;
-  --orange-600: #8b4331;
-  --orange-700: #5c2c20;
-  --orange-800: #2e1610;
+  --orange-100: #ffffff;
+  --orange-200: #f9dbd4;
+  --orange-300: #f3b7a8;
+  --orange-400: #ed937d;
+  --orange-500: #e76f51; 
+  --orange-600: #ad533d;
+  --orange-700: #743829;
+  --orange-800: #3a1c14;
   --orange-900: #000000;
 
   /* grey */
@@ -71,7 +73,7 @@ html {
   --grey-800: #1e293b;
   --grey-900: #0f172a;
   /* rest of the colors */
-  --black: #222;
+  --black: #000000;
   --white: #fff;
   --red-light: #f8d7da;
   --red-dark: #842029;
@@ -82,8 +84,8 @@ html {
   --extra-small-text: 0.7em;
   /* rest of the vars */
 
-  --border-radius: 0.25rem;
-  --letter-spacing: 1px;
+  --border-radius: 0.875rem;
+  --letter-spacing: 0.7px;
   --transition: 0.3s ease-in-out all;
   --max-width: 1120px;
   --fixed-width: 600px;

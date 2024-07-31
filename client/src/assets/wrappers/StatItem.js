@@ -1,9 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.article`
-  padding: 2rem;
-  background: var(--background-secondary-color);
-  border-bottom: 5px solid ${(props) => props.color};
+  padding: 1.2rem;
+  background: ${(props) => props.bcgcontainer};
   border-radius: var(--border-radius);
 
   header {
@@ -13,22 +12,24 @@ const Wrapper = styled.article`
   }
   .count {
     display: block;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 50px;
     color: ${(props) => props.color};
-    line-height: 2;
+    line-height: 1.7;
   }
   .title {
     margin: 0;
     text-transform: capitalize;
     letter-spacing: var(--letter-spacing);
+    font-weight: 600;
     text-align: left;
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
+    margin-top: 0.3rem;
+    font-size: 1.1rem;
+    color: var(--black);
   }
   .icon {
-    width: 70px;
-    height: 60px;
+    width: 63px;
+    height: 55px;
     background: ${(props) => props.bcg};
     border-radius: var(--border-radius);
     display: flex;
