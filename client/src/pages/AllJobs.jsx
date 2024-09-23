@@ -1,17 +1,24 @@
-import { toast } from "react-toastify";
+ import { toast } from "react-toastify";
 import { JobsContainer, SearchContainer } from "../components";
 import customFetch from "../../../utils/customFetch";
 import { useLoaderData } from "react-router-dom";
 import { useContext, createContext } from "react";
 
-export const loader = async () => {
-  console.log("hello");
+export const loader = async ({request}) => {
+  console.log(request.url);
+
+  const params = Object.fromEntries([
+    ...new URL(request.url).searchParams.entries(),
+  ]);
+  console.log(params);
   try {
-    const { data } = await customFetch.get("/jobs");
+    const { data } = await customFetch.get("/jobs", { params });
     return { data };
   } catch (error) {
+    console.error("Error fetching jobs:", error); // Log error for better clarity
     toast.error(error?.response?.data?.msg);
-    return error;
+    // return error;
+    return { data: [] };
   }
 };
 
