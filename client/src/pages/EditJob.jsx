@@ -4,8 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import { JOB_STATUS, JOB_TYPE } from "../../../utils/constants";
 import { Form, redirect } from "react-router-dom";
 import { toast } from "react-toastify";
-import customFetch from "../../../utils/customFetch";
-
+import customFetch from "../utils/customFetch";
 export const loader = async ({ params }) => {
   try {
     const { data } = await customFetch.get(`/jobs/${params.id}`);

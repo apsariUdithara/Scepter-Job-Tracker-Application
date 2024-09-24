@@ -3,9 +3,8 @@ import Wrapper from "../assets/wrappers/Dashboard";
 import { BigSidebar, Navbar, SmallSidebar } from "../components";
 import { createContext, useContext, useState } from "react";
 import { checkDefaultTheme } from "../App";
-import customFetch from "../../../utils/customFetch";
+import customFetch from "../utils/customFetch";
 import { toast } from "react-toastify";
-
 
 export const loader = async () => {
   try {
